@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/jsm/loaders/GLTFLoader'
 const scene: THREE.Scene = new THREE.Scene ()
 
 const loader = new GLTFLoader ()
-loader.load ('three/examples/models/gltf/BoomBox.glb', function (gltf) {
+loader.load ('model/scene.gltf', function (gltf) {
     scene.add (gltf.scene);
     gltf.scene.position.set (0,-2,3)
 }, (xhr) => {
